@@ -10,6 +10,7 @@ useEffect(()=>{
     .then(res=>{
         console.log(res)
         history.push('/login')
+        console.log("logout successfully")
     })
 .catch(err=>console.log('....',err))
 },[])

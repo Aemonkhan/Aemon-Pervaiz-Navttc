@@ -38,7 +38,7 @@ function AddPost() {
       })
       .then(res => {
         console.log(res)
-        //history.push('/posts');
+        history.push('/posts');
       })
       .catch(err => console.log(err, 'error'));
   }
