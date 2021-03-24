@@ -30,7 +30,7 @@ const handleSubmit=(e)=>{
         <Col lg={3} md={2} sm={1} xs={1}></Col>
         <Col lg={6} md={8} sm={10} xs={10}>
           <ListGroup>
-            <ListGroup.Item variant="success" className="col-headers">
+            <ListGroup.Item variant="secondary" className="col-headers">
               Register New User
             </ListGroup.Item>
             <ListGroup.Item variant="light">
@@ -54,7 +54,7 @@ const handleSubmit=(e)=>{
               </Row>
               <Row className="my-2">
                 <Col className="text-center">
-                  <Button type='submit' variant="success" size="md">
+                  <Button type='submit' variant="secondary" size="md">
                     Register User
                   </Button>
                 </Col>

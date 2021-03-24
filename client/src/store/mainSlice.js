@@ -30,6 +30,7 @@ const mySlice = createSlice({
 
         },
         
+        
     },
     extraReducers:{
         [fetchSinglePost.fulfilled] : (state, action) =>{

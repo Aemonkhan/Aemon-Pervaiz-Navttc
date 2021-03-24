@@ -4,9 +4,9 @@ import { Navbar, Nav } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar bg="success" variant="dark" className="">
+    <Navbar bg="secondary" variant="dark" className="">
       <Navbar.Brand as={Link} to="/">
-        MERN App
+        ONLINE-STORE
       </Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link as={Link} to="/users">
