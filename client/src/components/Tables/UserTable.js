@@ -50,6 +50,7 @@ const tableIcons = {
   };
 function UserTable({rows, cols}) {
     const [open, setOpen] = React.useState(false);
+    
 
     const handleClickOpen = () => {
       setOpen(true);
@@ -79,14 +80,14 @@ function UserTable({rows, cols}) {
         icons={tableIcons}
         columns={columns}
         data={data}
-        actions= {[
-            {
-              icon: tableIcons.Add,
-              isFreeAction: true,
-              tooltip: 'Save User',
-              onClick: handleClickOpen
-            },
-        ]}
+        // actions= {[
+        //     {
+        //       icon: tableIcons.Add,
+        //       isFreeAction: true,
+        //       tooltip: 'Save User',
+        //       onClick: handleClickOpen
+        //     },
+        // ]}
         
         editable={{
             onRowUpdate: (newData, oldData) =>
@@ -113,7 +114,7 @@ function UserTable({rows, cols}) {
             }),
         }}
       />
-      <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+      {/* <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
       <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
       <DialogContent>
       <TextField
@@ -142,7 +143,7 @@ function UserTable({rows, cols}) {
           Subscribe
         </Button>
       </DialogActions>
-    </Dialog>
+    </Dialog> */}
           
       </>
     )

@@ -32,7 +32,7 @@ axios.put('http://localhost:4000/api/posts/update/'+id, newPost)
         })
       .catch((err) => console.log(err));
   }, []);
-
+  
   return (
       <form onSubmit={handleSubmit}>
     <Row className="mt-5">

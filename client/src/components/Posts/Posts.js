@@ -25,6 +25,7 @@ const dispatch = useDispatch()
     .catch((e) => console.log(e));
 
   }
+
   useEffect(() => {
 console.log('i am in useeffect of posts')
       axios.get('http://localhost:4000/api/posts/')

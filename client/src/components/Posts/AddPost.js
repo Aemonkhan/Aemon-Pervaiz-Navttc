@@ -76,7 +76,7 @@ function AddPost() {
                 </Row>
                 <Row className="my-2">
                   <Col className="text-center">
-                    <Button type='submit' variant="info" size="md">
+                    <Button type='submit' variant="success" size="md">
                       Add
                   </Button>
                   </Col>

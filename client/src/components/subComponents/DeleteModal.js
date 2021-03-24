@@ -17,6 +17,11 @@ export default function DeleteModal(props) {
         console.log(props)
         props.handleDelete(props.id)
     };
+    const handleCancel =() =>{
+        setOpen(false);
+        console.log(props)
+        props.handleCancel(props.id)
+    };
 
     return (
         <div>
@@ -31,9 +36,6 @@ export default function DeleteModal(props) {
             >
                 <DialogTitle id="alert-dialog-title">{"Are you sure you want to delete?"}</DialogTitle>
                 <DialogActions>
-                    <Button onClick={handleClose} color="primary">
-                        Cancel
-          </Button>
                     <Button onClick={handleClose} color="primary" autoFocus>
                         Ok
           </Button>
